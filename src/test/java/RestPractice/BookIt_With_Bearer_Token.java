@@ -13,6 +13,7 @@ public class BookIt_With_Bearer_Token {
     @BeforeClass
     public static void setUp() {
         RestAssured.baseURI = "https://cybertek-reservation-api-qa.herokuapp.com";
+
         //RestAssured.port = 8000;
         //RestAssured.basePath = "/api";
         // above will generate a BASE REQUEST URL OF http://52.23.254.102:8000/api

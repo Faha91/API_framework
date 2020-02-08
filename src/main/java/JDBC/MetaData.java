@@ -27,6 +27,7 @@ public class MetaData {
         rs.last();
         System.out.println(rs.getRow());
 
+
         /* MetaData is data about the data
          *
          * DatabaseMetaData
@@ -35,7 +36,7 @@ public class MetaData {
          *
          *
          * */
-        DatabaseMetaData dbmd = conn.getMetaData();
+         DatabaseMetaData dbmd = conn.getMetaData();
         System.out.println("dbmd.getDatabaseProductName()  : " + dbmd.getDatabaseProductName());
         System.out.println("dbmd.getUserName()  : " + dbmd.getUserName());
 
@@ -44,6 +45,7 @@ public class MetaData {
         ResultSetMetaData rsmd = rs.getMetaData();
         System.out.println("rsmd.getColumnCount()  : " + rsmd.getColumnCount());
         System.out.println("rsmd.getColumnName(2)  : " + rsmd.getColumnName(2));
+
 
         System.out.println("------------------\n");
         // list all the column name from the query result you got

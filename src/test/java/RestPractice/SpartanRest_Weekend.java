@@ -163,6 +163,7 @@ public class SpartanRest_Weekend {
         List<Map<String, Object>> allSpartans = response.jsonPath().getList("content");
         for (Map<String, Object> each : allSpartans) {
             System.out.println(each);
+
         }
     }
 
